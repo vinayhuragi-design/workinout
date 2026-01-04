@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise Tracker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='workinout.css') }}">
+
+</head>
+
+<body>
+    <div id="box">
+  <h1 >WORKINOUT</h1>
+
+  <img src="{{ url_for('video_feed') }}" width="600" height="480">
+
+
+  <button onclick="setExercise(1)">Bicep Curl</button>
+  <button onclick="setExercise(2)">Squat</button>
+  <button onclick="setExercise(3)">Push-up</button>
+  <button onclick="setExercise(4)">Jumping Jack</button>
+
+  <p id="counter">Exercise Count: 0</p>
+    </div>
+ 
+
+<script src="{{ url_for('static', filename='workinout.js') }}"></script>
+
+</body>
+</html>
